@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Suppress browser request for favicon.ico -->
+    <link rel="shortcut icon" type="image/x-icon" href="data:image/x-icon;,">
+    <!-- Minified simple.css -->
+    <link rel="stylesheet" href="https://unpkg.com/simpledotcss/simple.min.css">
+
+    <title>Chat</title>
+<style>
+    pre {
+        height: 200px;
+        max-height: 200px;
+        overflow: auto;
+    }
+</style>
+</head>
+
+<body>
+    <h3>SSE Chat Client</h3>
+    <input id="msg" type="text"></input>
+    <button id='send'>Send</button>
+    <pre id="pre"></pre>
+</body>
+<script type="module" src="./app.js">
+</script>
+
+</html>

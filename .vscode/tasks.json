@@ -1,0 +1,19 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+         "label": "Run SSE Chat",
+         "type": "deno",
+         "command": "run",
+         "args": [
+             "-A",
+             "-r",
+             "--unstable",
+             "server.ts"
+         ],
+         "problemMatcher": [
+             "$deno"
+         ],
+     },
+    ]
+}
