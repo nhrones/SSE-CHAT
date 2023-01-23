@@ -1,3 +1,4 @@
+
 import { serverURL } from './comms.js'
 
 import { name } from './app.js'
@@ -5,6 +6,7 @@ let pre
 let msgInput
 let sendBtn
 
+// initialize our dom element references and handlers
 export const init = () => {
    pre = document.getElementById('pre')
    msgInput = document.getElementById('msg')

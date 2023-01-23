@@ -1,3 +1,4 @@
+
 // Random Name Generator for Javascript
 
 const capFirst = (string) => {

@@ -13,7 +13,7 @@ export const postMessage = (topic, from) => {
    });
 };
 
-
+// initialize our EventSource channel
 export const initComms = (name) => {
 
    // this is our SSE client; we'll call her `events`
