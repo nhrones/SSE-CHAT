@@ -1,11 +1,12 @@
 import { DEBUG } from './constants.ts'
 
-/** 
- * Server Sent Events
- * Subscribes a client to a Server Sent Event stream 
- * @param _req (Request) - the request object from the http request
- */
+////////////////////////////////////////////////////////
+//              Server Sent Events                    //
+// Subscribes a client to a Server Sent Event stream  //
+////////////////////////////////////////////////////////
+
 export function registerClient(req: Request): Response {
+   
    // channel per connection
    const sseChannel = new BroadcastChannel("sse");
 
@@ -14,7 +15,7 @@ export function registerClient(req: Request): Response {
    const stream = new ReadableStream({
       start: (controller) => {
 
-         // listening for bc messages
+         // listening for sseChannel messages
          sseChannel.onmessage = (e) => {
             const { topic, data } = e.data
             console.info(data)
