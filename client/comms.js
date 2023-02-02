@@ -55,10 +55,7 @@ export const initComms = (name) => {
       
       console.info('got: ', data)
       
-      if (from === name) from = 'Me' //{
-         // ignore my own messages
-         //return;
-      //}
+      if (from === name) from = 'Me';
 
       switch (topic) {
 
